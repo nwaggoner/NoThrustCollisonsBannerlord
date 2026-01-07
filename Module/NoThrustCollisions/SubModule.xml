@@ -1,0 +1,28 @@
+﻿<Module>
+  <Name value="No Thrust Collisions 1.3.13"/>
+  <Id value="NoThrustCollisions"/>
+  <Version value="v1.1.0.3"/>
+  <SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <ModuleType value="Community" />
+  <DependedModules>
+	<DependedModule Id="Native" DependentVersion="v1.3.13" Optional="false"/>
+	<DependedModule Id="SandBoxCore" DependentVersion="v1.3.13" Optional="false"/>
+	<DependedModule Id="Sandbox" DependentVersion="v1.3.13" Optional="false"/>
+	<DependedModule Id="CustomBattle" DependentVersion="v1.3.13" Optional="false"/>
+	<DependedModule Id="StoryMode" DependentVersion="v1.3.13" Optional="false"/>
+	<DependedModule Id="Bannerlord.MBOptionScreen" DependentVersion="v5.11.3" Optional="false"/>
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="NoThrustCollisions"/>
+      <DLLName value="NoThrustCollisions.dll"/>
+      <SubModuleClassType value="NoThrustCollisions.SubModule"/>
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls/>
+</Module>

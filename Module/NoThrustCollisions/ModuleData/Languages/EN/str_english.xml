@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+    <tags>
+        <tag language="English" />
+    </tags>
+    <strings>
+		<string id="NTCLq80DvXE" text="Damage Multiplier" />
+		<string id="NTCkkL55pAp" text="Adjust the global damage dealt in missions (Campaign/Sandbox only)." />
+		<string id="NTCTapTj0aE" text="Ranged Damage Multiplier" />
+		<string id="NTCWBIgIdaA" text="Adjusts damage dealt by ranged attacks (relative to 'Damage Multiplier' above)." />
+		<string id="NTCIxlzD21f" text="Horse Damage Multiplier" />
+		<string id="NTCR5dfOmVv" text="Adjusts damage dealt to mounts (relative to 'Damage Multiplier' above)." />
+		<string id="NTCMRD1reHs" text="Disable Thrust Collisions" />
+		<string id="NTCDgYbsASp" text="Disable collisisons with your allies when thrusting.... (giggity)." />
+    </strings>
+</base>

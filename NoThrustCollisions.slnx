@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="Module/NoThrustCollisions/ModuleData/Languages/EN/language_data.xml" />
+    <File Path="Module/NoThrustCollisions/ModuleData/Languages/EN/str_english.xml" />
+    <File Path="Module/NoThrustCollisions/SubModule.xml" />
+    <File Path="WorkshopCreate.xml" />
+    <File Path="WorkshopUpdate.xml" />
+  </Folder>
+  <Project Path="NoThrustCollisions.csproj" Id="66ccba64-1aaf-44e6-aa24-dcea967f485c" />
+</Solution>
