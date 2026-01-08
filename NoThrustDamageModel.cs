@@ -12,7 +12,7 @@ using TaleWorlds.ObjectSystem;
 
 namespace NoThrustCollisions {
     public class NoThrustDamageModel : SandboxAgentApplyDamageModel {
-        private NTCSettings ntcInstance;
+        public NTCSettings ntcInstance;
 
         public NoThrustDamageModel() {
             ntcInstance = NTCSettings.Instance;
@@ -51,7 +51,7 @@ namespace NoThrustCollisions {
             return baseValue / ntcInstance.damageMultiplier;
         }
 
-
+        
         public override void DecideWeaponCollisionReaction(in Blow registeredBlow, in AttackCollisionData collisionData, Agent attacker, Agent defender, in MissionWeapon attackerWeapon, bool isFatalHit, bool isShruggedOff, float momentumRemaining, out MeleeCollisionReaction colReaction) {
             
             base.DecideWeaponCollisionReaction(registeredBlow, collisionData, attacker, defender, attackerWeapon, isFatalHit, isShruggedOff, momentumRemaining, out colReaction);
@@ -61,12 +61,13 @@ namespace NoThrustCollisions {
             }
 
             bool isAlly = (defender.Team.IsPlayerTeam || defender.Team.IsPlayerAlly);
-            bool isThrust = (collisionData.ThrustTipHit && registeredBlow.StrikeType == StrikeType.Thrust);
+            bool isThrust = (registeredBlow.StrikeType == StrikeType.Thrust || collisionData.ThrustTipHit);
             
-            if (ntcInstance.noThrustCol && isAlly && isThrust)
+            if (ntcInstance.noThrustCol && isAlly && isThrust)      
                 colReaction = MeleeCollisionReaction.ContinueChecking;
 
             return;
         }    
+      
     }
 }

@@ -296,6 +296,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NoThrustDamageModel.cs" />
+    <Compile Include="NoThrustHarmonyPatches.cs" />
+    <Compile Include="NoThrustMissionBehaviour.cs" />
     <Compile Include="NoThrustSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubModule.cs" />
