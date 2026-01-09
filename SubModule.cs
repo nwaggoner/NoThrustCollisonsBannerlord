@@ -18,9 +18,9 @@ namespace NoThrustCollisions {
         /* ----------------- MBSUBMODULEBASE OVERRIDES ----------------- */
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject) {
-            NoThrustDamageModel thrustModel = new NoThrustDamageModel();
-
             base.OnGameStart(game, gameStarterObject);
+
+            NoThrustDamageModel thrustModel = new NoThrustDamageModel();
             gameStarterObject.AddModel(thrustModel);
         }
 
@@ -37,12 +37,8 @@ namespace NoThrustCollisions {
         protected override void OnSubModuleLoad() {
             
             base.OnSubModuleLoad();
-            if (!NTCSettings.Instance.noThrustCol) {
-                return;
-            }
-
-            Harmony harmony = new Harmony("mod.no_thrust_collision");
-            harmony.PatchAll();
+            //Harmony harmony = new Harmony("mod.no_thrust_collision");
+            //harmony.PatchAll();
 
         }
 
